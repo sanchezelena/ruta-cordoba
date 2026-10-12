@@ -119,8 +119,8 @@ function WeatherSection() {
         <p className="eyebrow">PREVISIÓN PARA EL VIAJE</p>
         <h2>El tiempo en <em>Córdoba.</em></h2>
           <PhotoGallery label="Elena con frío y con calor" photos={[
-          {src:`${import.meta.env.BASE_URL}elena%20con%20frio.jpeg`,alt:'Elena con frío',caption:'Elena vestida si tiene frío'},
-          {src:`${import.meta.env.BASE_URL}elena%20con%20calor.jpeg`,alt:'Elena con calor',caption:'Elena vestida si tiene calor'},
+          {src:`${import.meta.env.BASE_URL}elena%20con%20frio.jpeg`,alt:'Elena con frío',caption:'ELENA VESTIDA SI TIENE FRÍO'},
+          {src:`${import.meta.env.BASE_URL}elena%20con%20calor.jpeg`,alt:'Elena con calor',caption:'ELENA VESTIDA SI TIENE CALOR'},
         ]} />
         <p>Martes 13 a sábado 17 de octubre · hora local</p>
         <p><a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Datos meteorológicos: Open-Meteo</a></p>
@@ -198,7 +198,7 @@ export default function App() {
         <div className="train-schedule">
             <h3>Horario de tren <em>ida y vuelta</em></h3>
               <PhotoGallery label="Fotos para los viajes de ida y vuelta" photos={[
-              {src:`${import.meta.env.BASE_URL}preparada.jpeg`, alt:'Elena preparada para el viaje', caption:'Elena empieza el viaje'},
+              {src:`${import.meta.env.BASE_URL}preparada.jpeg`, alt:'Elena preparada para el viaje', caption:'ELENA EMPIEZA EL VIAJE'},
             ]} />
             <p><strong>Tren de ida:</strong> Martes a las 15h en Puerta de Atocha · llegada a las 17h.</p>
             <p><strong>Tren de vuelta:</strong> Sábado a las 18:20h en Córdoba · llegada a las 20:15h.</p>
@@ -210,14 +210,14 @@ export default function App() {
           <h2>La ruta de Elena<br /><em>en Córdoba.</em></h2>
           <p className="route-map-hint">Pulsa cualquier parada para verla en Google Maps.</p>
             <PhotoGallery label="Elena empezando" photos={[
-            {src:`${import.meta.env.BASE_URL}ready.jpeg`,alt:'Elena empezando',caption:'Elena preparada para empezar la ruta'},
+            {src:`${import.meta.env.BASE_URL}ready.jpeg`,alt:'Elena empezando',caption:'ELENA PREPARADA PARA EMPEZAR LA RUTA'},
           ]} />
         </div>
         
         <div className="route-timeline">
           {routes.map((route, i) => <RouteBlock key={`${route.day}-${route.time}`} route={route} index={i} />)}
                     <PhotoGallery label="Elena durmiendo" photos={[
-            {src: `${import.meta.env.BASE_URL}elena%20durmiendo.jpeg`,alt:'Elena durmiendo',caption:'Cómo acabará Elena si camina todo esto'},
+            {src: `${import.meta.env.BASE_URL}elena%20durmiendo.jpeg`,alt:'Elena durmiendo',caption:'CÓMO ACABARÁ ELENA SI CAMINA TODO ESTO'},
           ]} />
         
         </div>
@@ -228,8 +228,8 @@ export default function App() {
           <p className="eyebrow">PARA HACER UNA PARADA</p>
           <h2 id="bars-title">Bares <em>de Córdoba.</em></h2>
             <PhotoGallery label="Elena comiendo y bebiendo" photos={[
-            {src:`${import.meta.env.BASE_URL}elena%20comiendo.jpeg`,alt:'Elena comiendo',caption:'Lo que va hacer Elena (comer)'},
-            {src:`${import.meta.env.BASE_URL}elena%20bebiendo.jpeg`,alt:'Elena bebiendo',caption:'Lo que no (beber alcohol)'},
+            {src:`${import.meta.env.BASE_URL}elena%20comiendo.jpeg`,alt:'Elena comiendo',caption:'LO QUE VA A HACER ELENA (COMER)'},
+            {src:`${import.meta.env.BASE_URL}elena%20bebiendo.jpeg`,alt:'Elena bebiendo',caption:'LO QUE NO VA A HACER ELENA (BEBER ALCOHOL)'},
           ]} />
         </div>
         <ol className="bars-list">
